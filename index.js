@@ -63,18 +63,22 @@ function writeToFile(fileName, data) {
      ##Table of Content
     
      ##Installation
-    
+     ${data.installation}
+
      ##Usage
-    
+    ${data.usage}
+
      ##Contributing
-    
+    ${data.contribution}
+
      ##Tests
-    
+    ${data.test}
+
      ##License
     
      ##Questions
-     GitHub: ${data-username}
-    ${data-contactinfo} `
+     GitHub: ${data.username}
+    ${data.contactinfo} `
 // }
 
 fs.writeFile(fileName, finalPage, function(error) {
