@@ -56,12 +56,18 @@ inquirer.prompt (questions)
 )
 
 function writeToFile(fileName, data) {
-    const finalPage = `# ${data.title}
+    const finalPage = ` # ${data.title}
      ## Description
      ${data.description}
     
      ##Table of Content
-    
+    [Installation](#Installation)
+    [Usage](#Usage)
+    [Contibuting](#Contributing)
+    [Tests](#Contributing)
+    [License](#License)
+    [Questions](#Questions)
+
      ##Installation
      ${data.installation}
 
