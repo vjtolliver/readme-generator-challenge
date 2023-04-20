@@ -57,34 +57,36 @@ inquirer.prompt (questions)
 
 function writeToFile(fileName, data) {
     const finalPage = ` # ${data.title}
-     ## Description
-     ${data.description}
+## Description
+${data.description}
     
-     ##Table of Content
-    [Installation](#Installation)
-    [Usage](#Usage)
-    [Contibuting](#Contributing)
-    [Tests](#Contributing)
-    [License](#License)
-    [Questions](#Questions)
+## Table of Content
+[Installation](#Installation)
+[Usage](#Usage)
+[Contibuting](#Contributing)
+[Tests](#Contributing)
+[License](#License)
+[Questions](#Questions)
 
-     ##Installation
-     ${data.installation}
+## Installation
+${data.installation}
 
-     ##Usage
-    ${data.usage}
+## Usage
+${data.usage}
 
-     ##Contributing
-    ${data.contribution}
-
-     ##Tests
-    ${data.test}
-
-     ##License
+     
+## Contributing
     
-     ##Questions
-     GitHub: ${data.username}
-    ${data.contactinfo} `
+${data.contribution}
+
+## Tests
+${data.test}
+
+## License
+    
+## Questions
+GitHub: ${data.username}
+${data.contactinfo} `
 // }
 
 fs.writeFile(fileName, finalPage, function(error) {
