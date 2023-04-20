@@ -27,22 +27,27 @@ const questions = [
 {
     type: 'input',
     name: 'usage',
-    message: 'Please enter your usage information.',
+    message: 'Please enter instructions on how to use your project.',
 }, 
 {
     type: 'input',
     name: 'contributing',
-    message: 'Please enter your contribution guidelines.',
+    message: 'Please enter your guidelines for how to contribute to your project.',
 },
 {
     type: 'input',
     name: 'test',
-    message: 'Please enter your test instructions.',
+    message: 'Please enter the tests for your project and test instructions.',
 },
 {
     type: 'input',
-    name: 'contact',
-    message: 'Please enter how to reach you and your contact information.',
+    name: 'email',
+    message: 'Please enter your email address.',
+},
+{
+    type: 'input',
+    name: 'contactinfo',
+    message: 'Please enter instructions on how to reach you for additional questions.',
 }
 ]
 
@@ -62,10 +67,15 @@ ${data.description}
     
 ## Table of Content
 [Installation](#Installation)
+
 [Usage](#Usage)
+
 [Contibuting](#Contributing)
+
 [Tests](#Contributing)
+
 [License](#License)
+
 [Questions](#Questions)
 
 ## Installation
@@ -77,7 +87,7 @@ ${data.usage}
      
 ## Contributing
     
-${data.contribution}
+${data.contributing}
 
 ## Tests
 ${data.test}
@@ -85,7 +95,8 @@ ${data.test}
 ## License
     
 ## Questions
-GitHub: ${data.username}
+GitHub Profile: [${data.username}](https://github.com/${data.username})
+Email: ${data.email}
 ${data.contactinfo} `
 // }
 

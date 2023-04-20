@@ -1,31 +1,37 @@
- # 1
+ # taco-bel
 ## Description
-3
+this is a bunch of random words that im going to type out to test out my file. i love taco bell and chipotle. i love asian food the most, japenese, chinese, and thai food because i love things spicy. i also loveeee potatoes they are delicious in all forms, especially garlic butter and herbs! Even the baby purple potatoes are great with a little greek seasoning to top them off. honestly i just love food in general!
     
 ## Table of Content
 [Installation](#Installation)
+
 [Usage](#Usage)
+
 [Contibuting](#Contributing)
+
 [Tests](#Contributing)
+
 [License](#License)
+
 [Questions](#Questions)
 
 ## Installation
-4
+1. open it. 2. type 3. done
 
 ## Usage
-5
+type and enter and done
 
      
 ## Contributing
     
-undefined
+don't
 
 ## Tests
-7
+i dont have any, just trust me, it works
 
 ## License
     
 ## Questions
-GitHub: 2
-undefined 
+GitHub Profile: [vjtolliver](https://github.com/vjtolliver)
+Email: vj.tolliver@gmail.com
+please do not contact me. im scared of strangers 
