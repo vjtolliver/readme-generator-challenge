@@ -1,6 +1,6 @@
  # 1
    ## Description
-   1
+   3
        
    ## Table of Content
    [Installation](#Installation)
@@ -16,24 +16,24 @@
    [Questions](#Questions)
    
    ## Installation
-   2
+   1
    
    ## Usage
-   1
+   2
    
         
    ## Contributing
        
-   2
+   3
    
    ## Tests
    1
-   
-   ## License
-   Mozilla Public License 2.0
    
        
    ## Questions
    GitHub Profile: [2](https://github.com/2)
    Email: 2
-   1 
+   3 
+
+   ## License
+   MIT License [License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)

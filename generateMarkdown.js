@@ -1,5 +1,7 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
+const fs = require('fs');
+
 function renderLicenseBadge(license) {
 
 
@@ -70,14 +72,15 @@ function generateMarkdown(data) {
    ## Tests
    ${data.test}
    
-   ## License
-   ${data.license}
-   
        
    ## Questions
    GitHub Profile: [${data.username}](https://github.com/${data.username})
    Email: ${data.email}
-   ${data.contactinfo} `
+   ${data.contactinfo} 
+
+   ## License
+   ${data.license} `
+   
  };
 
 module.exports = generateMarkdown;
