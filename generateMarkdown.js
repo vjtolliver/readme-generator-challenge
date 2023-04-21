@@ -30,6 +30,7 @@ function renderLicenseBadge(license) {
 //   }
 
 //}
+//[${data.license}]("https://img.shields.io/static/github/license/${data.username}/:${data.title}")
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
@@ -71,7 +72,7 @@ function generateMarkdown(data) {
    
    ## License
    ${data.license}
-   [${data.license}]("https://img.shields.io/static/github/license/${data.username}/:${data.title}")
+   
        
    ## Questions
    GitHub Profile: [${data.username}](https://github.com/${data.username})

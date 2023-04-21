@@ -1,6 +1,6 @@
- # weather-dashboard-challenge
+ # 1
    ## Description
-   short words
+   1
        
    ## Table of Content
    [Installation](#Installation)
@@ -16,24 +16,24 @@
    [Questions](#Questions)
    
    ## Installation
-   n/a
+   2
    
    ## Usage
-   n/a
+   1
    
         
    ## Contributing
        
-   n/a
+   2
    
    ## Tests
-   n/a
+   1
    
    ## License
-   MIT License
-   [MIT License]("https://img.shields.io/static/github/license/vjtolliver/:weather-dashboard-challenge")
+   Mozilla Public License 2.0
+   
        
    ## Questions
-   GitHub Profile: [vjtolliver](https://github.com/vjtolliver)
-   Email: vj.tolliver@gmail.com
-   n/a 
+   GitHub Profile: [2](https://github.com/2)
+   Email: 2
+   1 
