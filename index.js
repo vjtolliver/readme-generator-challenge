@@ -1,12 +1,14 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./generateMarkdown');
 // TODO: Create an array of questions for user input
 const questions = [
     {
     type: 'input',
     message: 'What is the name of your repository?',
     name: 'title',
+    //response: 'string',
 },
 {
     type: 'input',
@@ -40,6 +42,12 @@ const questions = [
     message: 'Please enter the tests for your project and test instructions.',
 },
 {
+    type: 'list',
+    name: 'license',
+    choices: ["Apache License 2.0", "GNU General Public License v3.0", "MIT License", "BSD 2-Clause 'Simplified' License", "BSD 3-Clause 'New' or 'Revised' License", "Boost Software License 1.0", "Creative Commons Zero v1.0 Universal", "Eclipse Public License 2.0", "GNU Affero General Public License v3.0", "GNU General Public License v2.0", "GNU Lesser General Public License v2.1", "Mozilla Public License 2.0", "The Unlicense"],
+    message: 'Please pick the license you will be using for your project.',
+},
+{
     type: 'input',
     name: 'email',
     message: 'Please enter your email address.',
@@ -56,57 +64,28 @@ const questions = [
 inquirer.prompt (questions)
 .then((response) => {
     //console.log(response);
-    writeToFile("READMES.md", response)
+    generateMarkdown("READMES.md", response);
+    fs.writeFile('READMES.md', generateMarkdown(response), function(error) {
+        error ? console.log("error") : console.log("success!");
+        });
+        //renderLicenseLink()
 }
-)
+);
 
-function writeToFile(fileName, data) {
-    const finalPage = ` # ${data.title}
-## Description
-${data.description}
-    
-## Table of Content
-[Installation](#Installation)
-
-[Usage](#Usage)
-
-[Contibuting](#Contributing)
-
-[Tests](#Contributing)
-
-[License](#License)
-
-[Questions](#Questions)
-
-## Installation
-${data.installation}
-
-## Usage
-${data.usage}
-
-     
-## Contributing
-    
-${data.contributing}
-
-## Tests
-${data.test}
-
-## License
-    
-## Questions
-GitHub Profile: [${data.username}](https://github.com/${data.username})
-Email: ${data.email}
-${data.contactinfo} `
-// }
-
-fs.writeFile(fileName, finalPage, function(error) {
-error ? console.log("error") : console.log("success!");
-})
-};
+function renderLicenseLink(license) {
+if (questions){
+    const licenseLink = `[${data.license}]`;
+     console.log(licenseLink);
+   } else {
+     console.log("didnt work");
+}
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    
+   // renderLicenseLink();
+}
 
 // Function call to initialize app
 init();
