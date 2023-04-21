@@ -85,7 +85,7 @@ err ? console.error(err) : console.log('License logged!'));
 err ? console.error(err) : console.log('License logged!'));
 
 } else if (response.license === "MIT License") {
-    const licenseLink = `[License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
+    const licenseLink = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
     console.log(licenseLink);
 
     fs.appendFile('READMES.md', licenseLink, (err) =>
