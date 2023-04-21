@@ -16,24 +16,24 @@
    [Questions](#Questions)
    
    ## Installation
-   1
+   4
    
    ## Usage
-   2
+   5
    
         
    ## Contributing
        
-   3
+   6
    
    ## Tests
-   1
+   7
    
        
    ## Questions
    GitHub Profile: [2](https://github.com/2)
-   Email: 2
-   3 
+   Email: 8
+   9 
 
    ## License
-   MIT License [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+   Mozilla Public License 2.0 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
